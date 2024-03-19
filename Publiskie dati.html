@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="lv">
+    <head>
+        <title>Publiskā datubāze</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <style>
+
+            * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.dati {
+  font-size: 30px;
+  padding: 70px;
+}
+
+a:link, a:visited {
+  color:black
+}
+
+input[type=text] {
+  width: 250px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 5px 5px; 
+  background-image: url('https://icons.veryicon.com/png/o/commerce-shopping/small-icons-with-highlights/search-260.png');
+  background-repeat: no-repeat;
+  background-size: 30px;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header {
+  background-color: black;
+  color: aliceblue;
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="dati">
+        <a href="file:///C:/Users/Uldis/Desktop/programmeesana/laboratorijas%20uzskaites%20sist%C4%93ma.html"><p>&#129152 Atpakaļ uz sākumlapu</p></a>
+         <div class="title">
+        <h1 style="font-size:100px;">Publiskā datubāze</h1>
+        <p>Apskati pieejamās vielas un aprīkojumus</p>
+         </div>
+         <input type="text" id="search" onkeyup="myFunction()" placeholder="Meklēt pēc nosaukuma.." title="Ieraksti nosaukumu">
+         <hr>
+         <table id="myTable">
+          <tr class="header">
+            <th>ID</th>
+            <th>Nosaukums</th>
+            <th>Tips</th>
+            <th>Apakštips</th>
+            <th>Skaits</th>
+            <th>Svars</th>
+            <th>Komentāri</th>
+          </tr>
+          <tr>
+            <td>KL1042724</td>
+            <td>Katalizators</td>
+            <td>Aprīkojuma</td>
+            <td>Trauks</td>
+            <td>23</td>
+            <td>  </td>
+            <td>Daži Komentāri</td>
+          </tr>
+          <tr>
+            <td>KL1042723</td>
+            <td>Birete</td>
+            <td>Aprīkojuma</td>
+            <td>Trauks</td>
+            <td>20</td>
+            <td>  </td>
+            <td>Daži komentāri</td>
+          </tr>
+          <tr>
+            <td>KL1042742</td>
+            <td>HCl</td>
+            <td>Viela</td>
+            <td>Skābe</td>
+            <td>19</td>
+            <td>40</td>
+            <td>Daži komentāri</td>
+          </tr>
+          <tr>
+            <td>KL1042754</td>
+            <td>Kolba</td>
+            <td>Aprīkojuma</td>
+            <td>Trauks</td>
+            <td>20</td>
+            <td>  </td>
+            <td>Daži komentāri</td>
+          </tr>
+          <tr>
+            <td>KL1043534</td>
+            <td>Fe</td>
+            <td>Viela</td>
+            <td>Metāls</td>
+            <td>48</td>
+            <td>10</td>
+            <td>Daži komentāri</td>
+          </tr>
+          <tr>
+            <td>KL1043721</td>
+            <td>Na</td>
+            <td>Viela</td>
+            <td>Metāls</td>
+            <td>20</td>
+            <td>10</td>
+            <td>Daži komentāri</td>
+          </tr>
+          <tr>
+            <td>KL1043724</td>
+            <td>KOH</td>
+            <td>Viela</td>
+            <td>Hidroksīds</td>
+            <td>32</td>
+            <td>15</td>
+            <td>Daži komentāri</td>
+          </tr>
+          <tr>
+            <td>KL1043753</td>
+            <td>Mēģene</td>
+            <td>Aprīkojuma</td>
+            <td>Trauks</td>
+            <td>20</td>
+            <td>  </td>
+            <td>Daži komentāri</td>
+          </tr>
+          <tr>
+            <td>KL1044662</td>
+            <td>Piltuve</td>
+            <td>Aprīkojuma</td>
+            <td>Trauks</td>
+            <td>20</td>
+            <td>  </td>
+            <td>Daži komentāri</td>
+          </tr>
+          <tr>
+            <td>KL1045221</td>
+            <td>Mg</td>
+            <td>Viela</td>
+            <td>Metāls</td>
+            <td>24</td>
+            <td>20</td>
+            <td>Daži komentāri</td>
+          </tr>
+          <tr>
+            <td>KL1045353</td>
+            <td>Zn</td>
+            <td>Viela</td>
+            <td>Metāls</td>
+            <td>20</td>
+            <td>10</td>
+            <td>Daži komentāri</td>
+          </tr>
+          <tr>
+            <td>KL1045354</td>
+            <td>Aizsargbrilles</td>
+            <td>Aprīkojuma</td>
+            <td>Brilles</td>
+            <td>26</td>
+            <td>  </td>
+            <td>Daži komentāri</td>
+          </tr>
+          <tr>
+            <td>KL1046351</td>
+            <td>Cu</td>
+            <td>Viela</td>
+            <td>Metāls</td>
+            <td>20</td>
+            <td>10</td>
+            <td>Daži komentāri</td>
+          </tr>
+          <tr>
+            <td>KL1046396</td>
+            <td>Eksikators</td>
+            <td>Aprīkojuma</td>
+            <td>Trauks</td>
+            <td>15</td>
+            <td>  </td>
+            <td>Daži komentāri</td>
+          </tr>
+          <tr>
+            <td>KL1046723</td>
+            <td>Kristalizators</td>
+            <td>Aprīkojuma</td>
+            <td>Trauks</td>
+            <td>15</td>
+            <td>  </td>
+            <td>Daži komentāri</td>
+          </tr>
+          <tr>
+            <td>KL1047635</td>
+            <td>Mērcilindrs</td>
+            <td>Aprīkojuma</td>
+            <td>Trauks</td>
+            <td>30</td>
+            <td>  </td>
+            <td>Daži komentāri</td>
+          </tr>
+          <tr>
+            <td>KL1440862</td>
+            <td>Titrēšanas iekārta</td>
+            <td>Aprīkojuma</td>
+            <td>Trauks</td>
+            <td>10</td>
+            <td>  </td>
+            <td>Daži komentāri</td>
+          </tr>
+          <tr>
+            <td>KL1441965</td>
+            <td>Vārglāze</td>
+            <td>Aprīkojuma</td>
+            <td>Trauks</td>
+            <td>30</td>
+            <td>  </td>
+            <td>Daži komentāri</td>
+          </tr>
+          <tr>
+            <td>KL1442281</td>
+            <td>Ag</td>
+            <td>Viela</td>
+            <td>Metāls</td>
+            <td>10</td>
+            <td>20</td>
+            <td>Daži komentāri</td>
+          </tr>
+          <tr>
+            <td>KL1442785</td>
+            <td>CuO</td>
+            <td>Viela</td>
+            <td>Metāls</td>
+            <td>15</td>
+            <td>10</td>
+            <td>Daži komentāri</td>
+          </tr>
+          <tr>
+            <td>KL1444184</td>
+            <td>Filtrēšanas iekārta</td>
+            <td>Aprīkojuma</td>
+            <td>Trauks</td>
+            <td>5</td>
+            <td>  </td>
+            <td>Daži komentāri</td>
+          </tr>
+          <tr>
+            <td>KL1444725</td>
+            <td>FeO</td>
+            <td>Viela</td>
+            <td>Oksīds</td>
+            <td>20</td>
+            <td>10</td>
+            <td>Daži komentāri</td>
+          </tr>
+          <tr>
+            <td>KL1445264</td>
+            <td>Statīvs</td>
+            <td>Aprīkojuma</td>
+            <td>Trauks</td>
+            <td>10</td>
+            <td>  </td>
+            <td>Daži komentāri</td>
+          </tr>
+          <tr>
+            <td>KL1447390</td>
+            <td>Tīģelis</td>
+            <td>Aprīkojuma</td>
+            <td>Trauks</td>
+            <td>5</td>
+            <td>  </td>
+            <td>Daži komentāri</td>
+          </tr>
+         </table>
+        </div>
+
+        <script>
+          function myFunction() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("search");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[1];
+              if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  tr[i].style.display = "";
+                } else {
+                  tr[i].style.display = "none";
+                }
+              }       
+            }
+          }
+          </script>
+    </body>
+</html>

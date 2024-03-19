@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="lv">
+    <head>
+        <title>laboratorijas uzskaites sistēma</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <style>
+           
+           * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.nav {
+  height: 100%;
+  width: 600px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 40px;
+}
+
+
+.article {
+  margin-left: 600px; 
+  font-size: 45px; 
+}
+
+.imag {
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://doctorshospital.mx/wp-content/uploads/2020/02/laboratorio_clinico_banner_920.jpg");
+height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.button {
+  border-radius: 40px;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: aliceblue;
+  text-align: center;
+  font-size: 80px;
+  padding: 50px;
+  width: 1000px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -40px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 100px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.btn {
+    text-align: center;
+    padding: 75px;
+}
+
+a:link, a:visited {
+  color:aliceblue
+}
+
+            @media screen and (max-height: 600px) {
+  .nav {padding-top: 100px;}
+}
+
+        </style>
+    </head>
+    <body>
+           <div class="nav">
+              <h1 style="color: aliceblue;">Ķīmijas laboratorijas uzskaites sistēma</h1>
+              <img src="https://resources.cdn.uzdevumi.lv/58ba9bcc-d952-4c22-90d2-1dbd6b09e008/drosiba.png" alt="laboratorija" style="width:340px">
+              <hr>
+              <img src="https://saint-tech.lv/wp-content/uploads/2021/02/%C4%B6%C4%ABmijas-trauki-1.jpg" alt="piederumi" style="width:340px;height:250px">
+           </div>
+           
+           <div class="article">
+            <h1>Piekļūsti pie saviem laboratorijas datiem vai aplūko publiskos datus.</h1>
+             <div class="imag" >
+                <div class="btn">
+                <button class="button"><a href="file:///C:/Users/Uldis/Desktop/programmeesana/Piesl%C4%93gties.html"><span>Pieslēdzies ķīmijas laboratorijas uzskaites sistēmai </span></a></button>
+                </div>
+                <div class="btn">
+                <button class="button"><a href="file:///C:/Users/Uldis/Desktop/programmeesana/Publiskie%20dati.html"><span>Apskatīt publisko datubāzi </span></a></button>
+               </div >
+             </div>
+           </div>
+    </body>
+</html>

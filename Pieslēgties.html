@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="lv">
+    <head>
+        <title>Pieslēgties</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.login {
+  margin-left: 700px;
+  margin-top: 100px;
+  font-size: 30px;
+}
+
+.nav {
+  height: 100%;
+  width: 600px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 40px;
+}
+
+
+.container {
+  position: center;
+  margin: 60px;
+  max-width: 500px;
+  padding: 15px;
+  background-color: white;
+  margin-top: 200px;
+  margin-left: 400px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 25px;
+  margin: 30px 0 50px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.btn {
+  background-color: #111;
+  color: aliceblue;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.7;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+label {
+  font-size: 30px;
+}
+
+a:link, a:visited {
+  color:black
+}
+
+@media screen and (max-height: 600px) {
+  .nav {padding-top: 100px;}
+}
+        </style>
+    </head>
+    <body>
+
+      <div class="nav">
+        <h1 style="color: aliceblue;">Ķīmijas laboratorijas uzskaites sistēma</h1>
+        <img src="https://resources.cdn.uzdevumi.lv/58ba9bcc-d952-4c22-90d2-1dbd6b09e008/drosiba.png" alt="laboratorija" style="width:340px">
+        <hr>
+        <img src="https://saint-tech.lv/wp-content/uploads/2021/02/%C4%B6%C4%ABmijas-trauki-1.jpg" alt="piederumi" style="width:340px;height:250px">
+     </div>
+        <div class="login">
+          <a href="file:///C:/Users/Uldis/Desktop/programmeesana/laboratorijas%20uzskaites%20sist%C4%93ma.html"><p>&#129152 Atpakaļ uz sākumlapu</p></a>
+            <form action="/action_page.php" class="container">
+              <h1 style="font-size:60px">Piereģistrēšanās</h1>
+          
+              <label for="email"><b>E-pasts</b></label>
+              <input type="text" name="email" required>
+          
+              <label for="psw"><b>Parole</b></label>
+              <input type="password" name="psw" required>
+          
+              <button type="submit" class="btn">Pieslēgties</button>
+              <hr>
+              <span class="psw">Aizmirsta <a href="#">parole?</a></span>
+            </form>
+          </div>
+    </body>
+</html>
